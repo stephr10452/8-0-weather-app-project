@@ -1,0 +1,59 @@
+
+body{
+  display: grid;
+  grid-template-areas: 
+  "form form form form"
+  "display display display history"
+  "temperatures temperatures temperatures ."
+  "footer footer footer footer";
+  background-image: url("https://files.slack.com/files-pri/TCVA3PF24-F02H0QTSXUN/orange-cloud.jpeg");
+  
+}
+
+#top{
+    grid-area: form;
+    background-color: rgb(36, 129, 133);
+    border: 2px solid rgb(22, 22, 22);
+    max-width: 900px;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+  .display{
+    grid-area: display;
+    text-align: center;
+    margin-right: 5px;
+    border: 1px solid green;
+    background-color: lightgray;
+  }
+  .history {
+    grid-area: history;
+    background-color: white;
+    border: 2px white;
+    padding-left: 2px;
+    cursor: pointer;
+  }
+  .temperatures{
+    grid-area: temperatures;
+    background-color: yellow;
+    display: grid;
+    grid-template-areas: 
+    "today tomorrow dayAfter " ;
+  }
+  #today{
+    grid-area: today;
+  }
+  #tommorow{
+    grid-area: tomorrow;
+  }
+  #dayAfter{
+    grid-area: dayAfter;
+  }
+  footer{
+    grid-area: footer;
+    border: 2px solid black;
+  } 
