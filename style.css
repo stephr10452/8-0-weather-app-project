@@ -39,8 +39,8 @@ body{
   }
   .temperatures{
     grid-area: temperatures;
-    background-color: yellow;
     display: grid;
+    background-color: white;
     grid-template-areas: 
     "today tomorrow dayAfter " ;
   }
@@ -55,5 +55,6 @@ body{
   }
   footer{
     grid-area: footer;
+    text-align: center;
     border: 2px solid black;
   } 
